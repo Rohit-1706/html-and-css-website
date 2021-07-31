@@ -1,0 +1,244 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+nav{
+    height: 4vmax;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10;
+}
+
+.left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left >a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mid{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+.mid >a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid >a:hover{
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right > img{
+    width: 2.5vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.home{
+    border: 1px solid red;
+    height: 90vh;
+    background-image: linear-gradient(to right, rgb(124, 168, 168),rgb(158, 137, 137));
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    
+}
+
+#rightcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#rightcontainer > img{
+    margin-right: 6vmax;
+    filter: drop-shadow(0 0 15px black);
+}
+
+#leftcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+#leftcontainer > h1{
+    font-size: 5vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#leftcontainer > h2{
+    font-size: 2vmax;
+    margin-top: -5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#leftcontainer > p{
+    font-size: 1.3vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-left: 2%;
+}
+
+#leftcontainer > button{
+    width: 11vmax;
+    margin-left: 2%;
+    padding: 0.5vmax;
+    border: none;
+    border-radius:2vmax;
+    background-color: crimson;
+    color: cyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+
+}
+
+#leftcontainer > button:hover{
+    background-color: rgb(138, 6, 32);
+}
+
+
+/* /   --------------------------------/ */
+
+
+
+#products > h1{
+    text-align: center;
+    margin: 5vmax auto ;
+    font-size: 2.5vmax;
+    border-bottom: 5px solid red;
+    width: 25vw;
+    padding: 1vmax;
+
+}
+
+
+.productcontainer{
+    display: flex;
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* /------------------------------------/ */
+
+.product{
+    height: 30vmax;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vmax;
+}
+
+.product > img{
+    width: 20vmax;
+}
+.product > h4{
+    margin: 2%;
+}
+
+.product > h5{
+    margin: 0%;
+}
+.product:hover{
+    transform: translateY(-10px);
+}
+
+/* /--------------------------------------- */
+
+footer{
+    margin-top: 10vmax;
+    background-color: rgb(53, 49, 49);
+    color: blanchedalmond;
+    display: flex;
+    padding: 2vmax;
+    align-items: center;
+}
+
+.leftfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftfooter > h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftfooter > p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.leftfooter > img{
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.midfooter{
+    width: 60%;
+    text-align: center;
+}
+.midfooter > h1{
+    font-size: 4vmax ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: crimson;
+    
+}
+.midfooter > p{
+    max-width: 60%;   
+    margin: 1vmax auto;
+    
+}
+
+.rightfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightfooter > h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+}
+.rightfooter > a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5vmax;
+    font-size: 1.3vmax;
+
+}
